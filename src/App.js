@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/NavBar';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
-    <Navbar title="Bootstrap"/>
+    <NavBar title="React"/>
     </>
   );
 }
