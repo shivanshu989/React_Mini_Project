@@ -3,12 +3,16 @@ import { Router,Route,Link } from 'react-router-dom';
 import About from './About'
 import Login from './Login'
 import Signup from './Signup';
+import App from '../App';
 
 export default function Navbar(props){
   return(
     <>
     <Router>
     <switch>
+      <Route path="/">
+        <App/>
+      </Route>
       <Route path="/about">
         <About/>
       </Route>
@@ -22,7 +26,7 @@ export default function Navbar(props){
   </Router>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Health Edit</a>
+    <Link class="navbar-brand" to="/">Health Edit</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
