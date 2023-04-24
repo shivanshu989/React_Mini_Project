@@ -1,8 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
+<<<<<<< HEAD
     <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand">Navbar</a>
@@ -12,6 +13,11 @@ function App() {
     </form>
   </div>
 </nav>
+=======
+    <>
+    <NavBar title="React"/>
+    </>
+>>>>>>> 5448904a9dbdfba719e14b6cc3363b1ed3cf47d9
   );
 }
 
